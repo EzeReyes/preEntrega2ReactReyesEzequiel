@@ -9,4 +9,5 @@
     margin: 1rem;
     display: flex;
     flex-direction: row;
+    box-shadow: white 10px solid;
 }

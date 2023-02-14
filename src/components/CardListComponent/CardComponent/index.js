@@ -9,30 +9,36 @@ import "./style.css";
 
 const CardComponent = ( {data} ) => {
   return (
-    <Card className="cardProducts" sx={{ maxWidth: 345 }}>
+    <Card className="cardProducts" sx={{ maxWidth: 400 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="200"
           image={data.img}
           alt={data.id}
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {data.nombre} $ {data.precio}
+        <CardContent className='CardContent'>
+          <Typography gutterBottom variant="h4" component="div">
+            {data.nombre}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {data.descripcion}
+            {data.tipo}
+          </Typography>
+          <Typography>
+            $ {data.precio}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
+      <div className='cc'>
+      <CardActions className='ButtonCompra'>
         <Button size="small" color="primary">
           COMPRAR
         </Button>
       </CardActions>
+      </div>
     </Card>
   );
 }
+
 
 export default CardComponent;

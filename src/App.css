@@ -3,8 +3,8 @@
 }
 
 
-.App-header {
-  background-color: #282c34;
+.App-Body {
+  background: radial-gradient(#9198e5,black);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,12 +14,23 @@
   color: rgb(244, 248, 245);
 }
 
+
+.header{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to left,#9198e5,black);
+  color: white;
+}
+
 .nav {
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
-background-color: brown;
+background-color: #ff0d16;
 width: -webkit-fill-available;
 }
 
